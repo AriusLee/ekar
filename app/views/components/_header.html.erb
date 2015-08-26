@@ -1,0 +1,28 @@
+<header>
+  <div class="topbar">
+    <div class="container">
+      <a href="<%= root_path %>" id="logo-link">
+        <%= image_tag "logo.png", alt: "" %>
+        <span class="logo-text">Ekar</span>
+      </a>
+      <div class="pull-right hidden-xs">
+        <span class="top-info">
+          <strong>Hotline</strong><br>1400-222-222
+        </span>
+        <span class="top-info">
+          <strong>Email</strong><br><a href="mailto:cs@ekar.com">cs@ekar.com</a>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="container">
+      <%= link_to "Home", root_path %>
+      <%= link_to "About", root_path %>
+      <%= link_to "Milestone", root_path %>
+      <%= link_to "Team", root_path %>
+      <%= link_to "Products", root_path %>
+      <%= link_to "Contact", root_path %>
+    </div>
+  </div>
+</header>
