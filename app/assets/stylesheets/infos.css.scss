@@ -148,3 +148,73 @@
     margin: 0 0 20px;
   }
 }
+
+#tribute-section {
+  height: 600px;
+  background: image-url("infos/bg-memorial.jpg") center center no-repeat;
+  background-size: cover;
+
+  #tribute-slider {
+    height: 100%;
+
+    .carousel-inner {
+      height: 100%;
+
+      .item {
+        height: 100%;
+        color: #481706;
+
+        .container {
+          height: 100%;
+          position: relative;
+
+          h1 {
+            padding: 0 30px;
+            margin: 0 auto;
+            max-width: 800px;
+            line-height: 1.4em;
+          }
+        }
+      }
+
+      .col-sm-7, .row {
+        height: 100%;
+      }
+
+      .col-sm-5 {
+        height: 100%;
+        overflow-y: auto;
+        padding-top: 60px;
+        padding-left: 40px;
+      }
+
+      .img-holder {
+        height: 100%;
+        position: relative;
+
+        img {
+          @include vertical-align;
+          width: 100%;
+          box-shadow: 1px 1px 20px 0 rgba(0,0,0,0.2);
+        }
+      }
+    }
+
+    .carousel-control {
+      background: none;
+
+      img {
+        @include position(absolute, 50% null null null);
+        margin-top: -22px;
+      }
+
+      &.left img {
+        left: 20px;
+      }
+
+      &.right img {
+        right: 20px;
+      }
+    }
+  }
+}

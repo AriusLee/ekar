@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'infos/tribute'
+
   get 'infos/about'
 
   get 'infos/contact'
