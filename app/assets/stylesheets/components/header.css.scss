@@ -1,0 +1,85 @@
+header {
+
+  .topbar {
+
+    .pull-right {
+      margin-top: 10px;
+
+      .top-info {
+        display: inline-block;
+        color: #999;
+        padding: 5px 0;
+        padding-left: 30px;
+        margin-left: 30px;
+        border-left: 1px solid #e0e0e0;
+
+        &:first-child {
+          border: none;
+        }
+
+        strong {
+          color: $gold;
+        }
+
+        a {
+          color: #999;
+        }
+      }
+    }
+  }
+
+  .navbar {
+    @include linear-gradient($gold, $dark-gold);
+    border-radius: 0;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+    padding: 0;
+    margin: 0;
+    border: none;
+
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    a {
+      float: left;
+      padding: 0 20px;
+      text-transform: uppercase;
+      color: #FFF;
+      font-size: 13px;
+      line-height: 50px;
+      position: relative;
+      overflow: hidden;
+      text-shadow: -1px -1px rgba(0,0,0,0.2);
+
+      &.active {
+        box-shadow: inset 0 0 20px 0 rgba(0,0,0,0.2);
+        background: image-url("navbar-highlight.png") center bottom no-repeat;
+      }
+
+      &:hover {
+        background: image-url("navbar-highlight.png") center bottom no-repeat;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+#logo-link {
+  display: inline-block;
+  margin: 15px 0;
+
+  .logo-text {
+    margin-left: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: $gold;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
