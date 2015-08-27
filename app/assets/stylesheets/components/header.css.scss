@@ -22,7 +22,7 @@ header {
         }
 
         strong {
-          color: $gold;
+          color: $text-gold;
         }
 
         a {
@@ -68,7 +68,7 @@ header {
       text-shadow: -1px -1px rgba(0,0,0,0.2);
 
       &.active {
-        box-shadow: inset 0 0 20px 0 rgba(0,0,0,0.2);
+        box-shadow: inset 0 0 15px 0 rgba(0,0,0,0.12);
         background: image-url("navbar-highlight.png") center bottom no-repeat;
       }
 
@@ -88,7 +88,7 @@ header {
     margin-left: 10px;
     font-size: 24px;
     font-weight: bold;
-    color: $gold;
+    color: $text-gold;
     text-transform: uppercase;
     vertical-align: middle;
   }
