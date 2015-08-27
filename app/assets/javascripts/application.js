@@ -16,3 +16,5 @@
 //= require bootstrap
 //= require parallax
 //= require_tree .
+//= require jquery.easing.min
+//= require stickyNavbar
