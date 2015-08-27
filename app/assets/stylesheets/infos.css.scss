@@ -164,6 +164,38 @@
         height: 100%;
         color: #481706;
 
+        .container-lg {
+          text-align: center;
+
+          .img-holder {
+            padding: 50px 0 20px;
+
+            img {
+              width: 56%;
+            }
+          }
+        }
+
+        .full-holder {
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+        }
+
+        .carousel-caption {
+          @include position(absolute, null 0 0 0);
+          background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8));
+          color: #FFF;
+          text-align: left;
+          padding-bottom: 15px;
+          padding-top: 100px;
+
+          p {
+            font-size: 18px;
+            line-height: 1.4em;
+          }
+        }
+
         .container {
           height: 100%;
           position: relative;
@@ -174,6 +206,16 @@
             max-width: 800px;
             line-height: 1.4em;
           }
+
+          h3 {
+            margin-bottom: 20px;
+            line-height: 1.4em;
+          }
+
+          p {
+            font-size: 18px;
+            line-height: 1.4em;
+          }
         }
       }
 
@@ -182,20 +224,25 @@
       }
 
       .col-sm-5 {
-        height: 100%;
-        overflow-y: auto;
-        padding-top: 60px;
+        @include vertical-align;
         padding-left: 40px;
       }
 
       .img-holder {
         height: 100%;
         position: relative;
+        text-align: center;
 
         img {
-          @include vertical-align;
-          width: 100%;
+          width: 90%;
           box-shadow: 1px 1px 20px 0 rgba(0,0,0,0.2);
+        }
+
+        &.portrait {
+
+          img {
+            width: 60%;
+          }
         }
       }
     }
