@@ -9,3 +9,7 @@
 .vertical-align {
   @include vertical-align;
 }
+
+body {
+  font-weight: 300;
+}

@@ -1,9 +1,8 @@
-#career-section {
+#career-section,
+#contact-section {
   min-height: 600px;
-  background: image-url("infos/career.jpg") center bottom no-repeat;
-  background-size: 100% auto;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 60px;
 
   h1,
   p {
@@ -13,13 +12,63 @@
     margin: 0 auto 20px;
   }
 
+  p {
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+
+#career-section {
+  background: image-url("infos/career.jpg") center bottom no-repeat;
+  background-size: 100% auto;
+
   h1 {
     color: $gold;
   }
 
   p {
-    font-size: 18px;
     color: #868686;
-    font-weight: 300;
+  }
+}
+
+#contact-section {
+  background: $gold;
+
+  h1,
+  p {
+    color: #FFF;
+  }
+
+  .form-holder {
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    .form-control {
+      border-color: #FFF;
+      border-radius: 0;
+      background: none;
+      outline: none;
+      margin-bottom: 15px;
+      color: #FFF;
+
+      @include placeholder {
+        color: #FFF;
+      }
+
+      &:focus {
+        background: #FFF;
+        color: #4d4d4d;
+
+        @include placeholder {
+          color: #CCC;
+        }
+      }
+    }
+
+    textarea {
+      height: 200px;
+    }
   }
 }
