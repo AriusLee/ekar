@@ -1,0 +1,25 @@
+#career-section {
+  min-height: 600px;
+  background: image-url("infos/career.jpg") center bottom no-repeat;
+  background-size: 100% auto;
+  text-align: center;
+  padding-top: 80px;
+
+  h1,
+  p {
+    width: 100%;
+    max-width: 700px;
+    padding: 0 20px;
+    margin: 0 auto 20px;
+  }
+
+  h1 {
+    color: $gold;
+  }
+
+  p {
+    font-size: 18px;
+    color: #868686;
+    font-weight: 300;
+  }
+}
