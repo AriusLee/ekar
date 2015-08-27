@@ -1,13 +1,14 @@
 #intro-section {
   position: relative;
-  height: 100vh;
   min-height: 400px;
   overflow: hidden;
   background: #FFF;
+  padding-bottom: 60px;
 
   .bg-intro {
     @include position(absolute, -10px 100px null null);
-    height: 400px;
+    height: 300px;
+    opacity: 0.6;
   }
 
   .container {
@@ -18,13 +19,14 @@
     h2 {
       color: $text-gold;
       font-size: 26px;
-      max-width: 600px;
+      max-width: 700px;
       margin: 0 0 15px;
+      line-height: 1.4em;
     }
 
     p {
       color: #868686;
-      max-width: 600px;
+      max-width: 700px;
       margin: 0 0 20px;
       font-size: 18px;
     }
