@@ -2,4 +2,21 @@
 <%= render partial: "home/intro" %>
 <%= render partial: "components/infographics" %>
 <%= render partial: "components/timeline" %>
+
+<div class="text-center" style="padding: 0 0 150px;"><%= image_tag "home/infographic.jpg", style: "width: 40%;", class: "brand-circle" %></div>
+
 <%= render partial: "components/contact" %>
+
+
+<script>
+$(window).scroll(function() {
+  $('.brand-circle').each(function(){
+  var imagePos = $(this).offset().top;
+
+  var topOfWindow = $(window).scrollTop() + $(window).height();
+    if (imagePos < topOfWindow-200) {
+      $(this).addClass("hatch");
+    }
+  });
+});
+</script>
