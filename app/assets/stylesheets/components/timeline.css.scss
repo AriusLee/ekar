@@ -1,0 +1,132 @@
+#timeline-section {
+  position: relative;
+  padding: 100px 20px;
+
+  &:after {
+    content: "";
+    height: 100%;
+    width: 1px;
+    background: lighten(#EFEFEF, 4%);
+    @include position(absolute, 0 null 0 50%);
+  }
+
+  .tip-arrow {
+    width: 100px;
+    height: 50px;
+    background: lighten(#EFEFEF, 4%);
+    margin-left: -50px;
+    @include position(absolute, 0 null null 50%);
+
+    &:before {
+      content: "";
+      @include position(absolute, 0 null null -50px);
+      background: #FFF;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+
+    &:after {
+      content: "";
+      @include position(absolute, 0 -50px null null);
+      background: #FFF;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.timeline-holder {
+  position: relative;
+  z-index: 3;
+
+  .time-row {
+    margin-bottom: 60px;
+
+    &:after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    > div {
+      float: left;
+    }
+
+    .date-col,
+    .text-col {
+      width: 44%;
+    }
+
+    .dot-col {
+      width: 12%;
+      text-align: center;
+
+      .dot {
+        display: inline-block;
+        background: $dark-gold;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        margin-left: 2px;
+      }
+    }
+
+    .date-col {
+      font-size: 18px;
+      font-weight: 700;
+      color: #868686;
+    }
+
+    .text-col {
+      padding: 15px 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+      line-height: 1.4em;
+      color: #868686;
+      position: relative;
+      margin-top: -15px;
+      visibility: hidden;
+    }
+
+    &.right {
+      .date-col {
+        text-align: right;
+      }
+
+      .text-col:before {
+        content: "";
+        position: absolute;
+        background: #FFF;
+        border-top: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        width: 16px;
+        height: 16px;
+        top: 16px;
+        left: -8px;
+        @include transform(rotate(-45deg));
+      }
+    }
+
+    &.left {
+      .text-col {
+        text-align: right;
+      }
+
+      .text-col:after {
+        content: "";
+        position: absolute;
+        background: #FFF;
+        border-top: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        width: 16px;
+        height: 16px;
+        top: 16px;
+        right: -8px;
+        @include transform(rotate(45deg));
+      }
+    }
+  }
+}

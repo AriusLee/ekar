@@ -1,0 +1,76 @@
+<section id="timeline-section">
+  <div class="tip-arrow"></div>
+
+  <div class="container">
+    <div class="timeline-holder">
+
+      <div class="time-row right">
+        <div class="date-col">1979</div>
+        <div class="dot-col"><div class="dot"></div></div>
+        <div class="text-col">Dato Ken Cheok managed the Taman Rasah Jaya project under Menang Corp</div>
+      </div><!-- /time-row -->
+
+      <div class="time-row left">
+        <div class="text-col">Taman Ekar founded</div>
+        <div class="dot-col"><div class="dot"></div></div>
+        <div class="date-col">1986</div>
+      </div><!-- /time-row -->
+
+      <div class="time-row right">
+        <div class="date-col">1987</div>
+        <div class="dot-col"><div class="dot"></div></div>
+        <div class="text-col">Bandar Sungala Township development commenced</div>
+      </div><!-- /time-row -->
+
+      <div class="time-row left">
+        <div class="text-col">Taman Permata Township development commenced</div>
+        <div class="dot-col"><div class="dot"></div></div>
+        <div class="date-col">1988</div>
+      </div><!-- /time-row -->
+
+      <div class="time-row right">
+        <div class="date-col">1989</div>
+        <div class="dot-col"><div class="dot"></div></div>
+        <div class="text-col">Desa Skudai (Johor) Township development commenced</div>
+      </div><!-- /time-row -->
+
+      <div class="time-row left">
+        <div class="text-col">Bukit Permata Condominium Villas development commenced</div>
+        <div class="dot-col"><div class="dot"></div></div>
+        <div class="date-col">1992</div>
+      </div><!-- /time-row -->
+
+      <div class="time-row right">
+        <div class="date-col">1993</div>
+        <div class="dot-col"><div class="dot"></div></div>
+        <div class="text-col">Panchor Jaya Township development commenced</div>
+      </div><!-- /time-row -->
+
+      <div class="time-row left">
+        <div class="text-col">Bandar Ekar Rantau development commenced</div>
+        <div class="dot-col"><div class="dot"></div></div>
+        <div class="date-col">1998</div>
+      </div><!-- /time-row -->
+
+      <div class="time-row right">
+        <div class="date-col">2016</div>
+        <div class="dot-col"><div class="dot"></div></div>
+        <div class="text-col">New development</div>
+      </div><!-- /time-row -->
+
+    </div>
+  </div>
+</section>
+
+<script>
+$(window).scroll(function() {
+  $('.time-row .text-col').each(function(){
+  var imagePos = $(this).offset().top;
+
+  var topOfWindow = $(window).scrollTop() + $(window).height();
+    if (imagePos < topOfWindow-200) {
+      $(this).addClass("slideUp");
+    }
+  });
+});
+</script>
