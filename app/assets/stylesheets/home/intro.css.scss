@@ -3,6 +3,7 @@
   height: 100vh;
   min-height: 400px;
   overflow: hidden;
+  background: #FFF;
 
   .bg-intro {
     @include position(absolute, -10px 100px null null);
