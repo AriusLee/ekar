@@ -1,0 +1,46 @@
+#slider-section {
+  height: 100vh;
+  min-height: 400px;
+}
+
+#home-slider {
+  height: 100%;
+
+  .carousel-control {
+    background: none;
+
+    img {
+      @include position(absolute, 50% null null null);
+      margin-top: -22px;
+    }
+
+    &.left img {
+      left: 20px;
+    }
+
+    &.right img {
+      right: 20px;
+    }
+  }
+
+  .carousel-inner {
+    height: 100%;
+
+    .item {
+      height: 100%;
+
+      .img-holder {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+      }
+
+      .carousel-caption {
+        @include position(absolute, null 0 0 0);
+        background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8));
+        color: #FFF;
+        text-align: left;
+      }
+    }
+  }
+}
