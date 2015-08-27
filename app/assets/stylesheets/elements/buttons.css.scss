@@ -1,0 +1,15 @@
+.btn-primary {
+  background-color: $red;
+  border: none;
+  color: #FFF;
+
+  &:hover,
+  &:active {
+    background-color: darken($red, 5%);
+  }
+
+  &.btn-lg {
+    border-radius: 25px;
+    padding: 10px 30px;
+  }
+}
