@@ -1,0 +1,93 @@
+<section id="infographics-section">
+  <div class="container">
+    <div class="text-center">
+      <h3>Why Us?</h3>
+      <h2>The Architect Of Future Dreams.</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-md-5 text-col">
+        <div class="text-right"><strong>4</strong> different towns & cities</div>
+      </div>
+      <div class="col-md-2 icon-col">
+        <div class="icon-holder" style="background: #FFC999;"><i class="fa fa-building"></i></div>
+      </div>
+      <div class="col-md-5 bar-col">
+        <div class="info-bar" style="width: 30%; background: #FFC999;"></div>
+      </div>
+    </div><!-- /row -->
+
+    <div class="row">
+      <div class="col-md-5 text-col">
+        <div class="text-right"><strong>5</strong> townships</div>
+      </div>
+      <div class="col-md-2 icon-col">
+        <div class="icon-holder" style="background: #00D3B5;"><i class="fa fa-university"></i></div>
+      </div>
+      <div class="col-md-5 bar-col hidden-sm">
+        <div class="info-bar" style="width: 40%; background: #00D3B5;"></div>
+      </div>
+    </div><!-- /row -->
+
+    <div class="row">
+      <div class="col-md-5 text-col">
+        <div class="text-right"><strong>8</strong> different types of buildings</div>
+      </div>
+      <div class="col-md-2 icon-col">
+        <div class="icon-holder" style="background: #E67600;"><i class="fa fa-building-o"></i></div>
+      </div>
+      <div class="col-md-5 bar-col">
+        <div class="info-bar" style="width: 60%; background: #E67600;"></div>
+      </div>
+    </div><!-- /row -->
+
+    <div class="row">
+      <div class="col-md-5 text-col">
+        <div class="text-right"><strong>7000</strong> houses built</div>
+      </div>
+      <div class="col-md-2 icon-col">
+        <div class="icon-holder" style="background: #2AFF5E;"><i class="fa fa-home"></i></div>
+      </div>
+      <div class="col-md-5 bar-col">
+        <div class="info-bar" style="width: 80%; background: #2AFF5E;"></div>
+      </div>
+    </div><!-- /row -->
+
+    <div class="row">
+      <div class="col-md-5 text-col">
+        <div class="text-right"><strong>1,4000</strong> keys given to homeowners</div>
+      </div>
+      <div class="col-md-2 icon-col">
+        <div class="icon-holder" style="background: #FFCE00;"><i class="fa fa-key"></i></div>
+      </div>
+      <div class="col-md-5 bar-col">
+        <div class="info-bar" style="width: 90%; background: #FFCE00;"></div>
+      </div>
+    </div><!-- /row -->
+
+    <div class="row">
+      <div class="col-md-5 text-col">
+        <div class="text-right"><strong>30,000</strong> people staying in our residences</div>
+      </div>
+      <div class="col-md-2 icon-col">
+        <div class="icon-holder" style="background: #FF5600;"><i class="fa fa-users"></i></div>
+      </div>
+      <div class="col-md-5 bar-col">
+        <div class="info-bar" style="width: 100%; background: #FF5600;"></div>
+      </div>
+    </div><!-- /row -->
+  </div>
+</section>
+
+<script>
+$(window).scroll(function() {
+  $('.info-bar').each(function(){
+  var imagePos = $(this).offset().top;
+
+  var topOfWindow = $(window).scrollTop() + $(window).height();
+    if (imagePos < topOfWindow) {
+      $(this).addClass("stretchRight");
+    }
+  });
+});
+</script>
