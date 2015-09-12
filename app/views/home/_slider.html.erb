@@ -1,36 +1,237 @@
-<section id="slider-section">
-
-  <div id="home-slider" class="carousel slide" data-ride="carousel">
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <div class="img-holder" style="background-image: url('/assets/home/sample.jpg');"></div>
-      <div class="carousel-caption">
-        <div class="container">
-          <h3>Puchong Jaya</h3>
-          <p>Lorem ipsum dolar sit amet</p>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="img-holder" style="background-image: url('/assets/home/sample.jpg');"></div>
-      <div class="carousel-caption">
-        <div class="container">
-          <h3>Taman Ekar</h3>
-          <p>Lorem ipsum dolar sit amet</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#home-slider" role="button" data-slide="prev">
-    <%= image_tag "home/previous.png", alt: "" %>
-  </a>
-  <a class="right carousel-control" href="#home-slider" role="button" data-slide="next">
-    <%= image_tag "home/next.png", alt: "" %>
-  </a>
+<div id="product-nav">
+    <ul role="tablist">
+      <li role="presentation" class="active"><a href="#bandar-sungala" aria-controls="bandar-sungala" role="tab" data-toggle="tab">Bandar Sungala, PD</a></li>
+      <li role="presentation"><a href="#taman-permata" aria-controls="taman-permata" role="tab" data-toggle="tab">Taman Permata, Seremban</a></li>
+      <li role="presentation"><a href="#bukit-permata" aria-controls="bukit-permata" role="tab" data-toggle="tab">Bukit Permata, Seremban</a></li>
+      <li role="presentation"><a href="#panchor-jaya" aria-controls="panchor-jaya" role="tab" data-toggle="tab">Panchor Jaya, Ampangan</a></li>
+      <li role="presentation"><a href="#desa-skudai" aria-controls="desa-skudai" role="tab" data-toggle="tab">Desa Skudai, JB</a></li>
+      <li role="presentation"><a href="#taman-ekar" aria-controls="taman-ekar" role="tab" data-toggle="tab">Bandar Ekar, Rantau</a></li>
+    </ul>
 </div>
 
+<section id="slider-section">
+  <div class="tab-content">
+
+    <div role="tabpanel" class="tab-pane active" id="bandar-sungala">
+      <div id="home-slider" class="home-slider carousel slide" data-ride="carousel">
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <div class="img-holder" style="background-image: url('/assets/products/bandar-sungala-1.jpg');"></div>
+            <div class="carousel-caption">
+              <div class="container">
+                <p>Bandar Sunggala is freehold mixed commercial-residential township nestled in Port Dickson, Negeri Sembilan. It is situated near to Institut Kejuruteraan Tentera Darat and Port Dickson Golf & Country Club.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img-holder" style="background-image: url('/assets/products/bandar-sungala-2.jpg');"></div>
+            <div class="carousel-caption">
+              <div class="container">
+                <p>Bandar Sunggala is freehold mixed commercial-residential township nestled in Port Dickson, Negeri Sembilan. It is situated near to Institut Kejuruteraan Tentera Darat and Port Dickson Golf & Country Club.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img-holder" style="background-image: url('/assets/products/bandar-sungala-3.jpg');"></div>
+            <div class="carousel-caption">
+              <div class="container">
+                <p>Bandar Sunggala is freehold mixed commercial-residential township nestled in Port Dickson, Negeri Sembilan. It is situated near to Institut Kejuruteraan Tentera Darat and Port Dickson Golf & Country Club.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#home-slider" role="button" data-slide="prev">
+          <%= image_tag "home/previous.png", alt: "" %>
+        </a>
+        <a class="right carousel-control" href="#home-slider" role="button" data-slide="next">
+          <%= image_tag "home/next.png", alt: "" %>
+        </a>
+      </div>
+    </div><!-- tab-pane -->
+
+    <div role="tabpanel" class="tab-pane" id="taman-permata">
+      <div id="home-slider-2" class="home-slider carousel slide" data-ride="carousel">
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <div class="img-holder" style="background-image: url('/assets/products/taman-permata-1.jpg');"></div>
+            <div class="carousel-caption">
+              <div class="container">
+                <p>Lorem ipsum dolar sit amet</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img-holder" style="background-image: url('/assets/products/taman-permata-2.jpg');"></div>
+            <div class="carousel-caption">
+              <div class="container">
+                <p>Lorem ipsum dolar sit amet</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img-holder" style="background-image: url('/assets/products/taman-permata-3.jpg');"></div>
+            <div class="carousel-caption">
+              <div class="container">
+                <p>Lorem ipsum dolar sit amet</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img-holder" style="background-image: url('/assets/products/taman-permata-4.jpg');"></div>
+            <div class="carousel-caption">
+              <div class="container">
+                <p>Lorem ipsum dolar sit amet</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#home-slider-2" role="button" data-slide="prev">
+          <%= image_tag "home/previous.png", alt: "" %>
+        </a>
+        <a class="right carousel-control" href="#home-slider-2" role="button" data-slide="next">
+          <%= image_tag "home/next.png", alt: "" %>
+        </a>
+      </div>
+    </div><!-- tab-pane -->
+
+    <div role="tabpanel" class="tab-pane" id="panchor-jaya">
+      <div id="home-slider-3" class="home-slider carousel slide" data-ride="carousel">
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <div class="img-holder" style="background-image: url('/assets/products/panchor-jaya-1.jpg');"></div>
+            <div class="carousel-caption">
+              <div class="container">
+                <p>Lorem ipsum dolar sit amet</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img-holder" style="background-image: url('/assets/products/panchor-jaya-2.jpg');"></div>
+            <div class="carousel-caption">
+              <div class="container">
+                <p>Lorem ipsum dolar sit amet</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img-holder" style="background-image: url('/assets/products/panchor-jaya-3.jpg');"></div>
+            <div class="carousel-caption">
+              <div class="container">
+                <p>Lorem ipsum dolar sit amet</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img-holder" style="background-image: url('/assets/products/panchor-jaya-4.jpg');"></div>
+            <div class="carousel-caption">
+              <div class="container">
+                <p>Lorem ipsum dolar sit amet</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#home-slider-3" role="button" data-slide="prev">
+          <%= image_tag "home/previous.png", alt: "" %>
+        </a>
+        <a class="right carousel-control" href="#home-slider-3" role="button" data-slide="next">
+          <%= image_tag "home/next.png", alt: "" %>
+        </a>
+      </div>
+    </div><!-- tab-pane -->
+
+    <div role="tabpanel" class="tab-pane" id="desa-skudai">
+      <div id="home-slider-4" class="home-slider carousel slide" data-ride="carousel">
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <div class="img-holder" style="background-image: url('/assets/products/desa-skudai-1.jpg');"></div>
+            <div class="carousel-caption">
+              <div class="container">
+                <p>Lorem ipsum dolar sit amet</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img-holder" style="background-image: url('/assets/products/desa-skudai-2.jpg');"></div>
+            <div class="carousel-caption">
+              <div class="container">
+                <p>Lorem ipsum dolar sit amet</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img-holder" style="background-image: url('/assets/products/desa-skudai-3.jpg');"></div>
+            <div class="carousel-caption">
+              <div class="container">
+                <p>Lorem ipsum dolar sit amet</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img-holder" style="background-image: url('/assets/products/desa-skudai-4.jpg');"></div>
+            <div class="carousel-caption">
+              <div class="container">
+                <p>Lorem ipsum dolar sit amet</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img-holder" style="background-image: url('/assets/products/desa-skudai-5.jpg');"></div>
+            <div class="carousel-caption">
+              <div class="container">
+                <p>Lorem ipsum dolar sit amet</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#home-slider-4" role="button" data-slide="prev">
+          <%= image_tag "home/previous.png", alt: "" %>
+        </a>
+        <a class="right carousel-control" href="#home-slider-4" role="button" data-slide="next">
+          <%= image_tag "home/next.png", alt: "" %>
+        </a>
+      </div>
+    </div><!-- tab-pane -->
+
+    <div role="tabpanel" class="tab-pane" id="taman-ekar">
+      <div id="home-slider-5" class="home-slider carousel slide" data-ride="carousel">
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <div class="img-holder" style="background-image: url('/assets/products/taman-ekar.jpg');"></div>
+            <div class="carousel-caption">
+              <div class="container">
+                <p>Lorem ipsum dolar sit amet</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#home-slider-5" role="button" data-slide="prev">
+          <%= image_tag "home/previous.png", alt: "" %>
+        </a>
+        <a class="right carousel-control" href="#home-slider-5" role="button" data-slide="next">
+          <%= image_tag "home/next.png", alt: "" %>
+        </a>
+      </div>
+    </div><!-- tab-pane -->
+
+  </div>
 </section>
