@@ -39,8 +39,13 @@
 
 #contact-section {
   background: $dark-gold;
+  background: image-url("infos/contact-background.jpg") no-repeat center center $dark-gold;
+  background-size: cover;
 
-  h1,
+  h1 {
+    color: $text-gold;
+  }
+
   p {
     color: #FFF;
   }
@@ -52,20 +57,21 @@
     margin: 0 auto;
 
     .form-control {
-      border-color: #FFF;
+      border-color: rgba(255,255,255,0.6);
       border-radius: 0;
-      background: none;
+      background: rgba(0,0,0,0.1);
       outline: none;
       margin-bottom: 15px;
       color: #FFF;
 
       @include placeholder {
-        color: #FFF;
+        color: rgba(255,255,255,0.4);
       }
 
       &:focus {
-        background: #FFF;
-        color: #4d4d4d;
+        background: rgba(0,0,0,0.7);
+        color: #FFF;
+        border-color: #FFF;
 
         @include placeholder {
           color: #CCC;
