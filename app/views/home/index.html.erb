@@ -3,7 +3,22 @@
 <%= render partial: "components/infographics" %>
 <%= render partial: "components/timeline" %>
 
-<div class="text-center" style="padding: 0 0 150px;"><%= image_tag "home/infographic.jpg", style: "width: 40%;", class: "brand-circle" %></div>
+<div id="why-choose-section" class="text-center">
+  <h2 class="text-center">Why Customers Choose Us</h2>
+  <%= image_tag "infographic.png", style: "width: 40%;", class: "brand-circle" %>
+</div>
+
+<div id="we-see-section" data-parallax="scroll" data-image-src="/assets/home/bg-we-see.jpg" data-natural-width="2500" data-natural-height="1230" data-position="center center" iosfix="false" androidfix="false" bleed="30">
+  <div class="container">
+    <h1 class="text-center">What We See</h1>
+    <div class="text-center">
+      <p>While others see an empty land, we see a cosy home and your smiling faces. While others see bricks and cement, we see intimate laughter and security. While others
+  see yet another construction project, we see a place you can call your own. For each project is like an empty canvass, waiting for us to draw your masterpiece.</p>
+      <p>So, what do you see? Would you give us the honour to build your dream home? Would you give us the pleasure to see to your satisfaction?</p>
+    </div>
+  </div>
+</div>
+
 
 <%= render partial: "components/contact" %>
 

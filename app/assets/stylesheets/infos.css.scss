@@ -2,7 +2,8 @@
 
 #career-section,
 #contact-section,
-#about-section {
+#about-section,
+#we-see-section {
   height: 100vh;
   min-height: 600px;
   text-align: center;
@@ -38,6 +39,7 @@
 
 #contact-section {
   background: $dark-gold;
+  padding-top: 100px;
 
   h1,
   p {
@@ -272,5 +274,30 @@
         right: 20px;
       }
     }
+  }
+}
+
+#why-choose-section {
+  background: lighten(#EFEFEF, 4%);
+  padding: 100px 0;
+
+  h2 {
+    color: $text-gold;
+    margin-bottom: 40px;
+  }
+}
+
+#we-see-section {
+
+  h1 {
+    color: $text-gold;
+  }
+
+  p {
+    color: #FFF;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 1.8em;
+    text-shadow: #000 1px 1px 10px;
   }
 }
