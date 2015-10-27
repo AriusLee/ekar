@@ -41,6 +41,7 @@
   background: $dark-gold;
   background: image-url("infos/contact-background.jpg") no-repeat center center $dark-gold;
   background-size: cover;
+  min-height: 800px;
 
   h1 {
     color: $text-gold;
@@ -293,6 +294,7 @@
 }
 
 #we-see-section {
+  min-height: 1000px;
 
   h1 {
     color: $text-gold;
