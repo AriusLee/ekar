@@ -1,14 +1,12 @@
 <div id="product-nav">
   <div class="container">
     <ul role="tablist" class="text-left">
-      <li role="presentation"><a href="#bukit-permata" aria-controls="bukit-permata" role="tab" data-toggle="tab">Bukit Permata, Seremban</a></li>
-      <!--
-      <li role="presentation" class="active"><a href="#bandar-sungala" aria-controls="bandar-sungala" role="tab" data-toggle="tab">Bandar Sungala, PD</a></li>
-      <li role="presentation"><a href="#taman-permata" aria-controls="taman-permata" role="tab" data-toggle="tab">Taman Permata, Seremban</a></li>
-      <li role="presentation"><a href="#panchor-jaya" aria-controls="panchor-jaya" role="tab" data-toggle="tab">Panchor Jaya, Ampangan</a></li>
-      <li role="presentation"><a href="#desa-skudai" aria-controls="desa-skudai" role="tab" data-toggle="tab">Desa Skudai, JB</a></li>
-      <li role="presentation"><a href="#taman-ekar" aria-controls="taman-ekar" role="tab" data-toggle="tab">Bandar Ekar, Rantau</a></li>
-    -->
+      <li role="presentation" class="active"><a href="#bukit-permata" aria-controls="bukit-permata" role="tab" data-toggle="tab">Bukit Permata, Seremban</a></li>
+      <li role="presentation"><a href="#taman-permata-seremban" aria-controls="taman-permata-seremban" role="tab" data-toggle="tab">Taman Permata, Seremban</a></li>
+      <li role="presentation"><a href="#bandar-baru-sunggala" aria-controls="bandar-baru-sunggala" role="tab" data-toggle="tab">Bandar Baru Sunggala</a></li>
+      <li role="presentation"><a href="#bandar-ekar-rantau" aria-controls="bandar-ekar-rantau" role="tab" data-toggle="tab">Bandar Ekar Rantau</a></li>
+      <li role="presentation"><a href="#desa-skudai-johor" aria-controls="desa-skudai-johor" role="tab" data-toggle="tab">Desa Skudai, Johor</a></li>
+      <li role="presentation"><a href="#panchor-jaya-ampangan" aria-controls="panchor-jaya-ampangan" role="tab" data-toggle="tab">Panchor Jaya Ampangan</a></li>
     </ul>
   </div>
 </div>
@@ -16,32 +14,21 @@
 <section id="slider-section">
   <div class="tab-content">
 
-    <div role="tabpanel" class="tab-pane active" id="bandar-sungala">
+    <div role="tabpanel" class="tab-pane active" id="bukit-permata">
       <div id="home-slider" class="home-slider carousel slide" data-ride="carousel">
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-            <div class="img-holder" style="background-image: url('/assets/products/bandar-sungala-1.jpg');"></div>
-            <div class="carousel-caption">
-              <div class="container">
-                <p>Bukit Permata Villas is a unique living concept that blends warmth, privacy, comfort and convenience. It’s fine living at it’s best.</p>
-              </div>
-            </div>
+            <div class="img-holder" style="background-image: url(<%= asset_path 'projects/bukit-permata-seremban.jpg' %>);"></div>
           </div>
-          <div class="item">
-            <div class="img-holder" style="background-image: url('/assets/products/bandar-sungala-2.jpg');"></div>
-            <div class="carousel-caption">
-              <div class="container">
-                <p>Low rise and low density, well connected within KL/ Seremban highway, Bukit Permata is right at a prime coveted spot in Seremban.</p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="img-holder" style="background-image: url('/assets/products/bandar-sungala-3.jpg');"></div>
-            <div class="carousel-caption">
-              <div class="container">
-                <p>Club house facilities such as swimming pool, gym, games room, nursery, restaurants, pool bar, fun pub and a karaoke | 24 hour security | posh interior design.</p>
+          <div class="item map-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-7"><div class="img-holder"><%= image_tag "projects/bukit-permata-seremban-map.jpg", class: "vertical-align" %></div></div>
+                <div class="col-sm-5 vertical-align">
+                  <p>To complement the Taman Permata housing project, <b>Bukit Permata Villas</b> is a unique living concept that blends warmth, privacy, comfort and convenience. Inspired by ancient roman architecture, the design of the villas has white majestic Roman pillars with blue accents to exude an aura of sophistication and luxury. A well-maintained and richly decorated garden adorns the surroundings, providing the perfect backdrop to the discerning homeowner. Low rise and low density, well-connected within KL/ Seremban Highway, Bukit Permata is right a prime coveted spot in Seremban.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -57,40 +44,21 @@
       </div>
     </div><!-- tab-pane -->
 
-    <div role="tabpanel" class="tab-pane" id="taman-permata">
+    <div role="tabpanel" class="tab-pane" id="bandar-baru-sunggala">
       <div id="home-slider-2" class="home-slider carousel slide" data-ride="carousel">
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-            <div class="img-holder" style="background-image: url('/assets/products/taman-permata-1.jpg');"></div>
-            <div class="carousel-caption">
-              <div class="container">
-                <p>Lorem ipsum dolar sit amet</p>
-              </div>
-            </div>
+            <div class="img-holder" style="background-image: url(<%= asset_path 'projects/bandar-baru-sunggala.jpg' %>);"></div>
           </div>
-          <div class="item">
-            <div class="img-holder" style="background-image: url('/assets/products/taman-permata-2.jpg');"></div>
-            <div class="carousel-caption">
-              <div class="container">
-                <p>Lorem ipsum dolar sit amet</p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="img-holder" style="background-image: url('/assets/products/taman-permata-3.jpg');"></div>
-            <div class="carousel-caption">
-              <div class="container">
-                <p>Lorem ipsum dolar sit amet</p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="img-holder" style="background-image: url('/assets/products/taman-permata-4.jpg');"></div>
-            <div class="carousel-caption">
-              <div class="container">
-                <p>Lorem ipsum dolar sit amet</p>
+          <div class="item map-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-7"><div class="img-holder"><%= image_tag "projects/bandar-baru-sunggala-map.jpg", class: "vertical-align" %></div></div>
+                <div class="col-sm-5 vertical-align">
+                  <p>Launched in 1986, <b>Bandar Baru Sunggala</b> is the first housing scheme in Prot Dickson. Spanning 90 acres and consisting 1062 residential and commercial units, it was even bigger than Port Dicksin during its launch. An ambitious mixed-development housing project aimed at offering low and medium-cost homes to local residents, the township was designed to be self-sustaining and equipped with complete facilities such as a mosque, a kindergarten, town hall, playground, shops and stalls etc. The houses were styled in a residential cluster homes concept, which aims to invoke a sense of community- a new and revolutionary idea to Negeri Sembilan at that time.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -106,40 +74,21 @@
       </div>
     </div><!-- tab-pane -->
 
-    <div role="tabpanel" class="tab-pane" id="panchor-jaya">
+    <div role="tabpanel" class="tab-pane" id="bandar-ekar-rantau">
       <div id="home-slider-3" class="home-slider carousel slide" data-ride="carousel">
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-            <div class="img-holder" style="background-image: url('/assets/products/panchor-jaya-1.jpg');"></div>
-            <div class="carousel-caption">
-              <div class="container">
-                <p>Lorem ipsum dolar sit amet</p>
-              </div>
-            </div>
+            <div class="img-holder" style="background-image: url(<%= asset_path 'projects/bandar-ekar-rantau.jpg' %>);"></div>
           </div>
-          <div class="item">
-            <div class="img-holder" style="background-image: url('/assets/products/panchor-jaya-2.jpg');"></div>
-            <div class="carousel-caption">
-              <div class="container">
-                <p>Lorem ipsum dolar sit amet</p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="img-holder" style="background-image: url('/assets/products/panchor-jaya-3.jpg');"></div>
-            <div class="carousel-caption">
-              <div class="container">
-                <p>Lorem ipsum dolar sit amet</p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="img-holder" style="background-image: url('/assets/products/panchor-jaya-4.jpg');"></div>
-            <div class="carousel-caption">
-              <div class="container">
-                <p>Lorem ipsum dolar sit amet</p>
+          <div class="item map-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-7"><div class="img-holder"><%= image_tag "projects/bandar-ekar-rantau-map.jpg", class: "vertical-align" %></div></div>
+                <div class="col-sm-5 vertical-align">
+                  <p>From single storeys to shop offices to semi-Ds, <b>Bandar Ekar Rantau</b> is a green township located next to small rural town of Rantau. The strategic location puts it right in the middle of many other small establishments nearby such as Mambau, Kuala Sawah, Tampin etc, and it is easily accessible via North-South Expressway Central Link and the Seremban - PD highway. It aims to bring life to the quiet "one street" twon of Rantau by developing the area into a fully self-contained township with better infrastructure and full-fledged facilities, while maintaining the green outdoor living of the countryside. The development sits on 290 acres of oil palm plantation land and is located on the main road of the existing Rantau town.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -155,48 +104,21 @@
       </div>
     </div><!-- tab-pane -->
 
-    <div role="tabpanel" class="tab-pane" id="desa-skudai">
+    <div role="tabpanel" class="tab-pane" id="desa-skudai-johor">
       <div id="home-slider-4" class="home-slider carousel slide" data-ride="carousel">
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-            <div class="img-holder" style="background-image: url('/assets/products/desa-skudai-1.jpg');"></div>
-            <div class="carousel-caption">
-              <div class="container">
-                <p>Lorem ipsum dolar sit amet</p>
-              </div>
-            </div>
+            <div class="img-holder" style="background-image: url(<%= asset_path 'projects/desa-skudai-johor.jpg' %>);"></div>
           </div>
-          <div class="item">
-            <div class="img-holder" style="background-image: url('/assets/products/desa-skudai-2.jpg');"></div>
-            <div class="carousel-caption">
-              <div class="container">
-                <p>Lorem ipsum dolar sit amet</p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="img-holder" style="background-image: url('/assets/products/desa-skudai-3.jpg');"></div>
-            <div class="carousel-caption">
-              <div class="container">
-                <p>Lorem ipsum dolar sit amet</p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="img-holder" style="background-image: url('/assets/products/desa-skudai-4.jpg');"></div>
-            <div class="carousel-caption">
-              <div class="container">
-                <p>Lorem ipsum dolar sit amet</p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="img-holder" style="background-image: url('/assets/products/desa-skudai-5.jpg');"></div>
-            <div class="carousel-caption">
-              <div class="container">
-                <p>Lorem ipsum dolar sit amet</p>
+          <div class="item map-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-7"><div class="img-holder"><%= image_tag "projects/desa-skudai-johor-map.jpg", class: "vertical-align" %></div></div>
+                <div class="col-sm-5 vertical-align">
+                  <p><b>Desa Skudai</b> is a mixed-development township strategically located approximately &#189; hour drive from Johor Bahru town and 15 minutes away from Senai airport. Started in 1989, this project is the second housing development launched by Taman Ekar under its subsidiary, Maraya Sdn Bhd and the entire development spans over 150 acres of land. Located near University Teknologi, the Second Causeway link to Singapore and also the Kelab Di-Raja Johor, Desa Skudai is the top choice for affordable living and convenience.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -212,16 +134,21 @@
       </div>
     </div><!-- tab-pane -->
 
-    <div role="tabpanel" class="tab-pane" id="taman-ekar">
+    <div role="tabpanel" class="tab-pane" id="panchor-jaya-ampangan">
       <div id="home-slider-5" class="home-slider carousel slide" data-ride="carousel">
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-            <div class="img-holder" style="background-image: url('/assets/products/taman-ekar.jpg');"></div>
-            <div class="carousel-caption">
-              <div class="container">
-                <p>Lorem ipsum dolar sit amet</p>
+            <div class="img-holder" style="background-image: url(<%= asset_path 'projects/panchor-jaya-ampangan.jpg' %>);"></div>
+          </div>
+          <div class="item map-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-7"><div class="img-holder"><%= image_tag "projects/panchor-jaya-ampangan-map.jpg", class: "vertical-align" %></div></div>
+                <div class="col-sm-5 vertical-align">
+                  <p><b>Panchor Jaya</b> is a satellite town in Seremban located approximately 8km to the north-east of Seremban town centre. It comprises of a mixture of residential, industrial and commercial developments. By going back to basics and pursuing our goal of providing "comfortable homes at affordable prices", an estimated 2,700 units of houses were developed by the Yayasan Negeri Sembilan and managed by Taman Ekar Sdn. Bhd. Located at Taman Ampangan Jaya next to the new Lekas highway, residents enjoy an easy access to Kuala Lumpur and Seremban city centre.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -232,6 +159,36 @@
           <%= image_tag "home/previous.png", alt: "" %>
         </a>
         <a class="right carousel-control" href="#home-slider-5" role="button" data-slide="next">
+          <%= image_tag "home/next.png", alt: "" %>
+        </a>
+      </div>
+    </div><!-- tab-pane -->
+
+    <div role="tabpanel" class="tab-pane" id="taman-permata-seremban">
+      <div id="home-slider-6" class="home-slider carousel slide" data-ride="carousel">
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <div class="img-holder" style="background-image: url(<%= asset_path 'projects/taman-permata-seremban.jpg' %>);"></div>
+          </div>
+          <div class="item map-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-7"><div class="img-holder"><%= image_tag "projects/taman-permata-seremban-map.jpg", class: "vertical-align" %></div></div>
+                <div class="col-sm-5 vertical-align">
+                  <p>A commercial and residential development located at the fringes of Seremban town, <b>Taman Permata</b> was launched in 1988 to accommodate the increasing demand for housing and start-up businesses. Within a mere 2km are facilities such as the Terminal 1 and 2 shopping complexes, bus stations, the Era Walk shopping distict, the Seremban Wet Market, Chung Hua Primary School, St Paul's Institution as well as being opposite SMK Puteri Secondary School. Taman Permata is a standing testament to our residents that affordability does not mean sacrificing the quality of living.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#home-slider-6" role="button" data-slide="prev">
+          <%= image_tag "home/previous.png", alt: "" %>
+        </a>
+        <a class="right carousel-control" href="#home-slider-6" role="button" data-slide="next">
           <%= image_tag "home/next.png", alt: "" %>
         </a>
       </div>
