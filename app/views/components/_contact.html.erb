@@ -6,22 +6,23 @@
     <p>Any question? Leave us a message using the form below.</p>
 
     <div class="form-holder">
+      <%= form_tag '/contact_us' do %>
       <form>
         <div class="row">
           <div class="col-sm-6">
-            <input type="text" placeholder="Your Name" class="form-control input-lg" required="true">
+            <%= text_field_tag 'name', '', class: "form-control input-lg", required: 'true', placeholder: 'Your Name' %>
           </div>
           <div class="col-sm-6">
-            <input type="email" placeholder="Your Email" class="form-control input-lg" required="true">
+            <%= email_field_tag 'email', '', class: "form-control input-lg", required: 'true', placeholder: 'Your Email' %>
           </div>
           <div class="col-sm-12">
-            <textarea placeholder="Your Message" class="form-control input-lg" required="true"></textarea>
+            <%= text_area_tag 'message', '', class: "form-control input-lg", required: 'true', placeholder: 'Your Message' %>
           </div>
           <div class="col-sm-6 text-right">
             <input type="submit" value="Send" class="btn btn-lg btn-primary btn-block">
           </div>
         </div>
-      </form>
+      <% end %>
     </div>
   </div>
 
