@@ -27,6 +27,11 @@
 #career-section {
   background: image-url("infos/40386581_m.jpg") center bottom no-repeat;
   background-size: 100% auto;
+  min-height: 840px;
+
+  @media (max-width: 767px) {
+    min-height: 900px;
+  }
 
   h1 {
     color: $text-gold;
@@ -305,7 +310,7 @@
 
   p {
     color: #FFF;
-    font-size: 21px;
+    font-size: 14px !important;
     font-weight: 300;
     line-height: 1.8em;
     text-shadow: #000 1px 1px 10px;
